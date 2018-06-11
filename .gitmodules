@@ -1,0 +1,3 @@
+[submodule "src/external/tensorflow-serving"]
+	path = src/external/tensorflow-serving
+	url = https://github.com/tensorflow/serving.git
