@@ -5,8 +5,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.8</java.version>
-    <tensor.version>1.7.0</tensor.version>
+    <tensor.version>1.8.0</tensor.version>
     <grpc.version>1.12.0</grpc.version>
     <protobuf.version>3.5.1</protobuf.version>
     <protobuf.plugin.version>0.5.1</protobuf.plugin.version>
@@ -73,7 +74,7 @@
           </protocArtifact>
           <pluginId>grpc-java</pluginId>
           <pluginArtifact>
-            io.grpc:protoc-gen-grpc-java:${grpc.version}:exe:${os.detected.classifer}
+            io.grpc:protoc-gen-grpc-java:${grpc.version}:exe:${os.detected.classifier}
           </pluginArtifact>
         </configuration>
         <executions>
