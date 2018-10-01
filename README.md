@@ -8,10 +8,8 @@ Provide Java API for the Tensorflow Serving
 
 ## how-to compile
 ```sh
-# install protoc for maven
-mvn install:install-file -DgroupId=com.google.protobuf -DartifactId=protoc -Dversion=${protoc.version} -Dpackaging=exe -Dfile=/path/to/file
-# install protoc-gen-grpc-java for maven
-mvn install:install-file -DgroupId=io.grpc -DartifactId=protoc-gen-grpc-java -Dversion=${grpc.version} -Dpackaging=exe -Dfile=/path/to/file
+# checkout source code
+git submodule update --init --remote --recursive
 # copy proto code
 sh initialize.sh
 # compile java code
